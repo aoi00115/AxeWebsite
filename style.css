@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 4px;
+  margin: 0px;
+}
+
+header{
+  width: 100%;
+  height: 70px;
+  background-color: #282828;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #282828;
+  z-index: 9999;
+}
+
+nav img{
+  width: 270px;
+  margin-top: 20px;
+  margin-left: 18px;
+  filter: invert(100%);
+}
+
+ul{
+  width: auto;
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+li{
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+a{
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+a:hover{
+  color: #f0c330;
+  transition: 0.5s;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  background-image: url('image/Axe_banner.jpg');
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Reactive buttons */
+
+.btn-1 {
+  width: 200px;
+  height: 70px;
+  border: none;
+  color: white;
+  background-color: #25252a;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 100%;
+  outline: none;
+  border: 3px solid #42fbf2;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-1:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-1:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #42fbf2;
+}
+
+.btn-1:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.btn-2 {
+  width: 200px;
+  height: 70px;
+  border: none;
+  color: white;
+  background-color: #25252a;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 100%;
+  outline: none;
+  border: 3px solid #00ff00;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-2:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-2:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color:	#00ff00;
+}
+
+.btn-2:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.about{
+  height: 600px;
+}
+
+.div1{
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-image: url('image/placeholder1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 20px 20px black inset;
+}
+
+.div2{
+  width: 50%;
+  height: 100%;
+  float: right;
+  color: white;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 22%;
+}
+
+h1{
+  font-size: 50px;
+}
+
+pre{
+  font-size: 20px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  min-height: 25vh;
+}
+
+.history{
+  height: 600px;
+}
+
+.div3{
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: white;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 12%;
+}
+
+.div4{
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-image: url('image/Axe_old_can.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 20px 20px black inset;
+}
+
+.list{
+  height: 600px;
+}
+
+.div5{
+  width: 100%;
+  height: 100%;
+  background-image: url('image/Axe_list.png');
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 20px 20px black inset;
+  color: white;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.comingsoon{
+  text-align: center;
+  font-size: 300%;
+}
